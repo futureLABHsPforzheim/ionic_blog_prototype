@@ -1,11 +1,20 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Location
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-input type="number" readonly="true" [(ngModel)]="longitude"></ion-input>
+      </ion-col>
+      <ion-col>
+        <ion-input type="number" readonly="true" [(ngModel)]="latitude"></ion-input>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
