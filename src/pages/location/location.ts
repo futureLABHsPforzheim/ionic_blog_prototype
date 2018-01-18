@@ -14,16 +14,18 @@ export class LocationPage {
   speed: number;
 
   constructor(public navCtrl: NavController, private geolocation: Geolocation) {
+    console.log("Location Constructor");
     this.getThePosition();
   }
 
   //Get the Location & Speed
   getThePosition() {
+  console.log("Fetch");
     this.geolocation.getCurrentPosition().then((resp) => {
       console.log("Start get Position");
-      this.longitude = resp.coords.longitude;
-      this.latitude = resp.coords.latitude;
-      this.altitude = resp.coords.altitude;
+      this.longitude = Math.round(resp.coords.longitude);
+      this.latitude = Math.round(resp.coords.latitude);
+      this.altitude = Math.round(resp.coords.altitude);
       this.speed = resp.coords.speed;
       console.log("Lon: " + this.longitude);
     }).catch((error) => {
