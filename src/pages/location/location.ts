@@ -23,9 +23,9 @@ export class LocationPage {
   console.log("Fetch");
     this.geolocation.getCurrentPosition().then((resp) => {
       console.log("Start get Position");
-      this.longitude = Math.round(resp.coords.longitude);
-      this.latitude = Math.round(resp.coords.latitude);
-      this.altitude = Math.round(resp.coords.altitude);
+      this.longitude = Math.round(resp.coords.longitude*100)/100;
+      this.latitude = Math.round(resp.coords.latitude*100)/100;
+      this.altitude = Math.round(resp.coords.altitude*100)/100;
       this.speed = resp.coords.speed;
       console.log("Lon: " + this.longitude);
     }).catch((error) => {

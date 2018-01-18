@@ -1,17 +1,12 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Contact
+      Camera
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-icon name="camera"></ion-icon>
+<img [src]="pic_path" *ngIf="pic_path" />
 </ion-content>
