@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { Geolocation } from '@ionic-native/geolocation';
+import { Camera, CameraOptions } from '@ionic-native/camera';
+import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { Geolocation } from '@ionic-native/geolocation';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Geolocation
+    Geolocation,
+    Camera,
+    Base64ToGallery
   ]
 })
 export class AppModule {}
