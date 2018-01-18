@@ -7,6 +7,6 @@
 </ion-header>
 
 <ion-content>
-<ion-icon name="camera"></ion-icon>
+<ion-icon name="camera" (click)="addPic()"></ion-icon>
 <img [src]="pic_path" *ngIf="pic_path" />
 </ion-content>
