@@ -4,10 +4,10 @@ import { Base64ToGallery } from '@ionic-native/base64-to-gallery';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 
 @Component({
-  selector: 'page-contact',
-  templateUrl: 'contact.html'
+  selector: 'page-camera',
+  templateUrl: 'camera.html'
 })
-export class ContactPage {
+export class CameraPage {
 
   pic_path: any;
 

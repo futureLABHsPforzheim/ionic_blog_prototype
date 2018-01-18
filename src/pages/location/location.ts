@@ -3,10 +3,10 @@ import { NavController } from 'ionic-angular';
 import { Geolocation } from '@ionic-native/geolocation';
 
 @Component({
-  selector: 'page-about',
-  templateUrl: 'about.html'
+  selector: 'page-location',
+  templateUrl: 'location.html'
 })
-export class AboutPage {
+export class LocationPage {
 
   longitude: number;
   latitude: number;
