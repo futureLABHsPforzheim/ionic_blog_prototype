@@ -67,14 +67,13 @@ export class CameraPage {
         ]
       });
       al.present();
-
   }
 
+  //Save to gallery
   saveImgToGallery(base64Data) {
     this.base64ToGallery.base64ToGallery(base64Data, { prefix: '_img' }).then(
       res => console.log('Saved image to gallery ', res),
       err => console.log('Error saving image to gallery ', err)
     );
   }
-
 }
